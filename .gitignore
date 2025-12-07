@@ -1,0 +1,23 @@
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*.local
+
+# Builds (if later used)
+dist/
+build/
+out/
+
+# Node (optional)
+node_modules/
+
+# Misc
+*.tmp
