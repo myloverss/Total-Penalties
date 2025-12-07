@@ -1,0 +1,31 @@
+:root{--bg:#f7f7f8;--card:#ffffff;--text:#1c1d21;--muted:#6b7280;--primary:#3b82f6;--primary-2:#1d4ed8;--border:#e5e7eb}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans"}
+.wrap{max-width:1200px;margin:0 auto;padding:24px}
+.header{margin-bottom:12px}
+.header h1{margin:0;font-size:22px}
+.sub{color:var(--muted);margin:6px 0 0 0}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.panel h2{margin:0 0 10px 0;font-size:16px}
+.panel textarea{width:100%;min-height:120px;padding:10px 12px;border:1px solid var(--border);border-radius:12px;outline:none;resize:vertical}
+.panel-top{display:flex;justify-content:flex-end;align-items:center;margin-bottom:6px}
+.actions{display:flex;gap:12px;margin-top:12px}
+.primary{padding:10px 16px;border:none;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;cursor:pointer;transition:filter .15s ease}
+.primary:hover{filter:brightness(1.05)}
+.ghost{padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:var(--card);cursor:pointer;transition:background .15s ease}
+.ghost:hover{background:#f3f4f6}
+.small{padding:6px 10px;font-size:12px}
+.table-wrap{overflow:auto}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px 12px;border-bottom:1px solid var(--border);text-align:left}
+.table th{color:var(--muted);font-weight:600}
+.table tbody tr:nth-child(even){background:#fafafa}
+.table tbody tr:hover{background:#f1f5f9}
+.sort-icon{font-size:12px;color:var(--muted);margin-left:6px}
+.sort-icon.active{color:var(--primary)}
+.row{display:flex;gap:12px;align-items:flex-start;flex-wrap:nowrap}
+.row .col{flex:1 1 0}
+.row .col-left{flex:0 0 60%}
+.row .col-right{flex:0 0 auto;width:40%;margin-left:24px;resize:horizontal;overflow:auto;min-width:320px}
+.table th{user-select:none}
