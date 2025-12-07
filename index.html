@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>批量添加人员</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="wrap">
+  <header class="header">
+    <h1>批量添加人员</h1>
+    <p class="sub">支持“、”、换行、中文逗号“，”或英文逗号","；出现换行或逗号统一按“、”；自动移除姓名中的空格并去重</p>
+  </header>
+  <section class="panel">
+    <h2>批量添加</h2>
+    <textarea id="bulkInput" placeholder="粘贴姓名列表，使用“、”、换行、或逗号分隔；自动移除空格"></textarea>
+    <div class="actions">
+      <button id="bulkAddBtn" class="primary" type="button" onclick="bulkAdd()">批量添加</button>
+      <button id="clearBtn" class="ghost" type="button" onclick="clearAll()">清空名单</button>
+    </div>
+  </section>
+  <section class="panel">
+    <h2>人员名单</h2>
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>姓名</th>
+          </tr>
+        </thead>
+        <tbody id="namesTable"></tbody>
+      </table>
+    </div>
+  </section>
+  
+</div>
+<script src="app.js"></script>
+</body>
+</html>
